@@ -1,0 +1,175 @@
+# 1
+A = [0, 0, 0, 0, 0, 0]
+i = 0
+valores = [1, 0, 5, -2, -5, 7]
+while i < 6:
+    A[i] = valores[i]
+    i = i + 1
+
+soma = A[0] + A[1] + A[5]
+print("A[0] + A[1] + A[5]:", soma)
+
+A[4] = 100
+
+i = 0
+while i < 6:
+    print(A[i])
+    i = i + 1
+
+# 2
+valores = [0, 0, 0, 0, 0, 0]
+i = 0
+while i < 6:
+    valores[i] = int(input("Minde um valor inteiro: "))
+    i = i + 1
+i = 0
+while i < 6:
+    print(valores[i])
+    i = i + 1
+
+# 3
+vetor = [0.0] * 10
+quadrados = [0.0] * 10
+i = 0
+while i < 10:
+    vetor[i] = float(input("Minde um numero real: "))
+    quadrados[i] = vetor[i] * vetor[i]
+    i = i + 1
+i = 0
+while i < 10:
+    print("valor:", vetor[i], "quadrado:", quadrados[i])
+    i = i + 1
+
+# 4
+vetor = [0] * 8
+i = 0
+while i < 8:
+    vetor[i] = int(input("Minde o valor da posicaoo " + str(i) + ": "))
+    i = i + 1
+X = int(input("Digite o indice X (0 a 7): "))
+Y = int(input("Digite o indice Y (0 a 7): "))
+print("soma:", vetor[X] + vetor[Y])
+
+# 5
+vetor = [0] * 10
+i = 0
+pares = 0
+while i < 10:
+    vetor[i] = int(input("Minde um numero: "))
+    if vetor[i] % 2 == 0:
+        pares = pares + 1
+    i = i + 1
+print("pares:", pares)
+
+# 6
+vetor = [0] * 10
+i = 0
+while i < 10:
+    vetor[i] = int(input("Minde um numero: "))
+    i = i + 1
+i = 1
+maior = vetor[0]
+menor = vetor[0]
+while i < 10:
+    if vetor[i] > maior:
+        maior = vetor[i]
+    if vetor[i] < menor:
+        menor = vetor[i]
+    i = i + 1
+print("maior:", maior)
+print("menor:", menor)
+
+# 7
+vetor = [0] * 10
+i = 0
+while i < 10:
+    vetor[i] = int(input("Minde um numero: "))
+    i = i + 1
+i = 1
+maior = vetor[0]
+posicao = 0
+while i < 10:
+    if vetor[i] > maior:
+        maior = vetor[i]
+        posicao = i
+    i = i + 1
+i = 0
+while i < 10:
+    print(vetor[i])
+    i = i + 1
+print("maior:", maior)
+print("posicao:", posicao)
+
+# 8
+notas = [0.0] * 15
+i = 0
+soma = 0.0
+while i < 15:
+    notas[i] = float(input("nota: "))
+    soma = soma + notas[i]
+    i = i + 1
+media = soma / 15
+print("media geral:", media)
+
+# 9
+vetor = [0.0] * 10
+i = 0
+negativos = 0
+soma_positivos = 0.0
+while i < 10:
+    vetor[i] = float(input("Minde um numero real: "))
+    if vetor[i] < 0:
+        negativos = negativos + 1
+    else:
+        soma_positivos = soma_positivos + vetor[i]
+    i = i + 1
+print("negativos:", negativos)
+print("soma dos positivos:", soma_positivos)
+
+# 10
+valores = [0.0] * 5
+i = 0
+soma = 0.0
+while i < 5:
+    valores[i] = float(input("Minde um valor: "))
+    soma = soma + valores[i]
+    i = i + 1
+i = 1
+maior = valores[0]
+menor = valores[0]
+while i < 5:
+    if valores[i] > maior:
+        maior = valores[i]
+    if valores[i] < menor:
+        menor = valores[i]
+    i = i + 1
+media = soma / 5
+i = 0
+while i < 5:
+    print("valor", i, ":", valores[i])
+    i = i + 1
+print("maior:", maior)
+print("menor:", menor)
+print("media:", media)
+
+# 11
+valores = [0.0] * 5
+i = 0
+while i < 5:
+    valores[i] = float(input("Minde um valor: "))
+    i = i + 1
+i = 1
+maior = valores[0]
+menor = valores[0]
+pos_maior = 0
+pos_menor = 0
+while i < 5:
+    if valores[i] > maior:
+        maior = valores[i]
+        pos_maior = i
+    if valores[i] < menor:
+        menor = valores[i]
+        pos_menor = i
+    i = i + 1
+print("maior valor:", pos_maior)
+print("menor valor:", pos_menor)
